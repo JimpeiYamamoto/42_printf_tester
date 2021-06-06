@@ -6,7 +6,7 @@
 #    By: yjimpei <yjimpei@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/27 23:50:22 by yjimpei           #+#    #+#              #
-#    Updated: 2021/05/30 20:22:26 by yjimpei          ###   ########.fr        #
+#    Updated: 2021/06/06 11:37:00 by yjimpei          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,8 @@ NAME = printftester.a
 
 all:	mytest.o ../libftprintf.a
 		gcc -o $(NAME) mytest.o ../libftprintf.a
-		./tester.a 2 | cat -e > ft_printf.txt
-		./tester.a 1 | cat -e > printf.txt
+		./${NAME} 2 | cat -e > ft_printf.txt
+		./${NAME} 1 | cat -e > printf.txt
 		diff ft_printf.txt printf.txt
 
 %.o:	%c.c

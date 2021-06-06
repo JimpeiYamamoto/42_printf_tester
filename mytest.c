@@ -6,7 +6,7 @@
 /*   By: yjimpei <yjimpei@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 11:03:49 by yjimpei           #+#    #+#             */
-/*   Updated: 2021/05/30 11:28:36 by yjimpei          ###   ########.fr       */
+/*   Updated: 2021/06/06 11:38:25 by yjimpei          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -660,12 +660,10 @@ int main(int argc, char **argv)
 		//test_i(p1);
 		//test_u(p1);
 		//tester(p1);
-		//test_d2(p1);
+		test_d2(p1);
 		//test_s2(p1);
-		printf(NULL);
-
 		//test_p2(p1);
-		new(p1);
+		//new(p1);
 	}
 	else if (argv[1][0] == '2')
 	{
@@ -677,13 +675,10 @@ int main(int argc, char **argv)
 		//test_i(p2);
 		//test_u(p2);
 		//tester(p2);
-		//test_d2(p2);
+		test_d2(p2);
 		//test_s2(p2);
-
-		ft_printf(NULL);
-		
 		//test_p2(p1);
-		new(p2);
+		//new(p2);
 	}
 	//system("leaks tester.a");
 	return (0);
