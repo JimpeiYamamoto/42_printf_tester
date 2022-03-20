@@ -6,7 +6,7 @@
 /*   By: yjimpei <yjimpei@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 11:03:49 by yjimpei           #+#    #+#             */
-/*   Updated: 2021/06/06 11:38:25 by yjimpei          ###   ########.fr       */
+/*   Updated: 2022/03/21 00:22:32 by yjimpei          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <limits.h>
+
 int	ft_printf(const char *format, ...);
 
 void	test(int (*f)(const char*, ...))
@@ -652,34 +653,33 @@ int main(int argc, char **argv)
 		return (0);
 	if (argv[1][0] == '1')
 	{
-		//test_crash(p1);
-		//test_s(p1);
-		//test_as(p1);
-		//test_c(p1);
-		//test_sc(p1);
-		//test_i(p1);
-		//test_u(p1);
-		//tester(p1);
+		test_crash(p1);
+		test_s(p1);
+		test_as(p1);
+		test_c(p1);
+		test_sc(p1);
+		test_i(p1);
+		test_u(p1);
+		tester(p1);
 		test_d2(p1);
-		//test_s2(p1);
-		//test_p2(p1);
-		//new(p1);
+		test_s2(p1);
+		test_p2(p1);
+		new(p1);
 	}
 	else if (argv[1][0] == '2')
 	{
-		//test_crash(p2);
-		//test_s(p2);
-		//test_as(p2);
-		//test_c(p2);
-		//test_sc(p2);
-		//test_i(p2);
-		//test_u(p2);
-		//tester(p2);
+		test_crash(p2);
+		test_s(p2);
+		test_as(p2);
+		test_c(p2);
+		test_sc(p2);
+		test_i(p2);
+		test_u(p2);
+		tester(p2);
 		test_d2(p2);
-		//test_s2(p2);
-		//test_p2(p1);
-		//new(p2);
+		test_s2(p2);
+		test_p2(p1);
+		new(p2);
 	}
-	//system("leaks tester.a");
 	return (0);
 }
